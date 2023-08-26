@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import { Vector,mainp,dollar} from "../assets";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 import axios from "axios";
 import styles from "../styles";
 
@@ -48,7 +49,7 @@ const Connection = () => {
         <section className={`flex md:flex-row bg-dark-gradient flex-col ${styles.paddingY}`}>
             <div className="flex w-full flex-col p-6 m-4 bg-black-gradient items-start rounded-xl">
                 <div className="mb-4 bg-transparent flex sm:flex-nowrap flex-wrap justify-between w-full items-start">
-                  <div className="mb-4 bg-transparent flex flex-wrap  w-full items-start">
+                  <div className="mb-4 bg-transparent flex flex-wrap gap-2  w-full items-start">
                        <input
                         type="text"
                         className="px-4 py-2 w-[400px] border text-white font-poppins bg-transparent rounded-xl focus:outline-none focus:ring focus:border-blue-300"
@@ -63,8 +64,8 @@ const Connection = () => {
                         Search
                     </button>
                     </div>  
-                    <button className="px-8 py-2 font-poppins text-white bg-gradient-to-br from-[#7C0F35] via-[#581266] to-transparent p-2 rounded-xl">
-                        Connect
+                    <button className=" font-poppins w-[200px] text-white bg-gradient-to-br from-[#7C0F35] via-[#581266] to-transparent  rounded-xl">
+                        <ConnectButton/>
                     </button>
                 </div>
                 <h1 className="font-poppins h-[28px] text-[25px] text-gradient">

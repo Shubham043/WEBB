@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { close, logo, menu,icon,NFTify } from "../assets";
+import { close, menu,icon,NFTify } from "../assets";
 
 
 const Navbar = () => {
