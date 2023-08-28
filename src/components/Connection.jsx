@@ -73,7 +73,7 @@ const Connection = () => {
                 </h1>
                 <br />
                 <div className="flex flex-col mt-4 py-4">
-                    <ul className="flex flex-wrap sm:flex-row gap-8 px-8">
+                    <ul className="flex flex-wrap sm:flex-row gap-8 md:px-8">
                         {pairs.map((pair, index) => (
                             <div key={index} className="flex flex-wrap gap-8">
                                 {/* Basic Info */}
